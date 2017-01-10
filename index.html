@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>New York Times Search</title>
+
+    <!-- Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/javascript/app.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron jumbotron">
+            <div class="header text-center">
+                <h1>New York Times Search</h1>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>Search Form</h4>
+            </div>
+            <div class="row">
+                <div class="panel-body">
+                    <div class="form col-lg-12">
+                        <div class="form-group">
+                            <label>Search Term:</label>
+                            <input class="form-control" type="text" id="searchTerm">
+                        </div>
+                        <div class="form-group">
+                            <label>Number of Records to Retrieve:</label>
+                            <input class="form-control" type="text" id="numberOfRecords">
+                        </div>
+                        <div class="form-group">
+                            <label>Start Year</label>
+                            <input class="form-control" type="text" placeholder="Optional" id="startYear">
+                        </div>
+                        <div class="form-group">
+                            <label>End Year:</label>
+                            <input class="form-control" type="text" placeholder="Optional" id="endYear">
+                        </div>
+                        <div>
+                            <button class="btn btn-info" type="submit" id="searchBtn">Search</button>
+                            <button class=" btn btn-danger " type="submit " id="clearBtn ">Clear Results</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default ">
+            <div class="panel-heading ">
+                <h4>Results</h4>
+            </div>
+            <div class="panel-body ">
+                <div id="searchResults ">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
